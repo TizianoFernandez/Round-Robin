@@ -72,6 +72,11 @@ impl RoundRobin {
                 }
 
                 //{ Mostrar por pantalla L(i) y Q }
+                println!(
+                    "Proceso: {} | Tiempo Restante: {} | Tiempo Reloj: {}",
+                    proceso.process_id, proceso.restante, self.reloj
+                );
+
                 self.registros.push(Registro {
                     proceso: proceso.clone(),
                     tiempo_reloj: self.reloj,
